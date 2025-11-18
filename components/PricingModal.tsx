@@ -41,27 +41,27 @@ const PricingModal: React.FC<PricingModalProps> = ({ onClose }) => {
           <div className="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow-lg border border-yellow-200 transform hover:-translate-y-2 transition-transform duration-300">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-yellow-800 border-b-2 border-yellow-200 pb-2">4 Day-3 Night</h3>
             <ul className="text-sm sm:text-base text-gray-700 space-y-2 sm:space-y-3 mt-3 sm:mt-4">
-              <li className="flex justify-between items-center"><span className="font-semibold">4-6 pax</span> <span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 4.000.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">7-10 pax</span> <span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 3.700.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">11-12 pax</span> <span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 3.500.000</span></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">4-6 pax</span><div className="flex items-end"><span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 4.000.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">7-10 pax</span><div className="flex items-end"><span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 3.700.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">11-12 pax</span><div className="flex items-end"><span className="font-mono bg-yellow-100 px-2 py-1 rounded">IDR 3.500.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
             </ul>
           </div>
           {/* Card 2 */}
           <div className="bg-white rounded-lg p-4 sm:p-6 shadow-lg border border-gray-200 transform hover:-translate-y-2 transition-transform duration-300">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 border-b-2 border-gray-200 pb-2">5 Day-4 Night</h3>
             <ul className="text-sm sm:text-base text-gray-700 space-y-2 sm:space-y-3 mt-3 sm:mt-4">
-              <li className="flex justify-between items-center"><span className="font-semibold">4 pax</span> <span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.800.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">5-9 pax</span> <span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.600.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">10-12 pax</span> <span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.400.000</span></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">4 pax</span><div className="flex items-end"><span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.800.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">5-9 pax</span><div className="flex items-end"><span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.600.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">10-12 pax</span><div className="flex items-end"><span className="font-mono bg-gray-100 px-2 py-1 rounded">IDR 4.400.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
             </ul>
           </div>
           {/* Card 3 */}
           <div className="bg-blue-50 rounded-lg p-4 sm:p-6 shadow-lg border border-blue-200 transform hover:-translate-y-2 transition-transform duration-300">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-800 border-b-2 border-blue-200 pb-2">6 Day-5 Night</h3>
             <ul className="text-sm sm:text-base text-gray-700 space-y-2 sm:space-y-3 mt-3 sm:mt-4">
-              <li className="flex justify-between items-center"><span className="font-semibold">4-6 pax</span> <span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 11.000.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">7-10 pax</span> <span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 7.700.000</span></li>
-              <li className="flex justify-between items-center"><span className="font-semibold">11-12 pax</span> <span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 6.400.000</span></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">4-6 pax</span><div className="flex items-end"><span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 11.000.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">7-10 pax</span><div className="flex items-end"><span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 7.700.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
+              <li className="flex justify-between items-center"><span className="font-semibold">11-12 pax</span><div className="flex items-end"><span className="font-mono bg-blue-100 px-2 py-1 rounded">IDR 6.400.000</span><span className="text-xs text-gray-500 ml-1">/ pax</span></div></li>
             </ul>
           </div>
         </div>
