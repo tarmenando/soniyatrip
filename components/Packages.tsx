@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { TravelPackage } from '../types';
 import PackageCard from './PackageCard';
 import PricingModal from './PricingModal';
+import ManadoPricingModal from './ManadoPricingModal';
+import GorontaloPricingModal from './GorontaloPricingModal';
+import BaliPricingModal from './BaliPricingModal';
 
 const travelPackages: TravelPackage[] = [
   {
@@ -32,7 +35,22 @@ const travelPackages: TravelPackage[] = [
 
 
 const Packages: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState<string | null>(null);
+
+  const renderModal = () => {
+    switch (openModal) {
+      case 'luwuk':
+        return <PricingModal onClose={() => setOpenModal(null)} />;
+      case 'manado':
+        return <ManadoPricingModal onClose={() => setOpenModal(null)} />;
+      case 'gorontalo':
+        return <GorontaloPricingModal onClose={() => setOpenModal(null)} />;
+      case 'bali':
+        return <BaliPricingModal onClose={() => setOpenModal(null)} />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <section id="packages" className="py-20 bg-white">
@@ -43,11 +61,11 @@ const Packages: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {travelPackages.map((pkg) => (
-            <PackageCard key={pkg.id} packageInfo={pkg} onOpenModal={() => setIsModalOpen(true)} />
+            <PackageCard key={pkg.id} packageInfo={pkg} onOpenModal={() => setOpenModal(pkg.id)} />
           ))}
         </div>
       </div>
-      {isModalOpen && <PricingModal onClose={() => setIsModalOpen(false)} />}
+      {renderModal()}
     </section>
   );
 };

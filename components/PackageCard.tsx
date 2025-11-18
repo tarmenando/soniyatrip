@@ -17,14 +17,12 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageInfo, onOpenModal }) =
           <a href="#booking" className="bg-orange-500 text-white font-semibold text-center rounded-full px-6 py-2 hover:bg-orange-600 transition-colors duration-300">
             Pesan Sekarang
           </a>
-          {packageInfo.id === 'luwuk' && (
-            <button
-              onClick={onOpenModal}
-              className="bg-transparent border border-orange-500 text-orange-500 font-semibold text-center rounded-full px-6 py-2 hover:bg-orange-500 hover:text-white transition-colors duration-300"
-            >
-              Tabel Harga
-            </button>
-          )}
+          <button
+            onClick={onOpenModal}
+            className="bg-transparent border border-orange-500 text-orange-500 font-semibold text-center rounded-full px-6 py-2 hover:bg-orange-500 hover:text-white transition-colors duration-300"
+          >
+            Tabel Harga
+          </button>
         </div>
       </div>
     </div>
