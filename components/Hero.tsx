@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const heroImages = [
   'https://ik.imagekit.io/tvlk/blog/2020/01/keindahan-alam-indonesia-5-Super-Adventure.jpg?tr=q-70,c-at_max,w-1600,h-900', // Manado
   'https://kontekssulawesi.id/wp-content/uploads/2024/05/Air-Terjun-Piala-Luwuk-Banggai-.jpg', // Luwuk
-  'https://pandooin-com.s3.ap-southeast-1.amazonaws.com/blog/article/images/hPjKtSIX1Uq4DgmUMNcmGqD9RgmuRjmAV4jZRxwK.webp', // Gorontalo
+  '/gorontalo.jpeg', // Gorontalo
   'https://bankraya.co.id/uploads/insights/jO3TRUmMuBAuyilKHgu9Ovjfs3nFoubWiSSjB3Pn.jpg' // Bali
 ];
 

@@ -23,7 +23,7 @@ const travelPackages: TravelPackage[] = [
     id: 'gorontalo',
     name: 'Trip Gorontalo',
     description: 'Rasakan pengalaman berenang bersama hiu paus jinak di Botubarani dan nikmati surga Olele Marine Park.',
-    imageUrl: 'https://pandooin-com.s3.ap-southeast-1.amazonaws.com/blog/article/images/hPjKtSIX1Uq4DgmUMNcmGqD9RgmuRjmAV4jZRxwK.webp'
+    imageUrl: '/gorontalo.jpeg'
   },
   {
     id: 'bali',
