@@ -30,10 +30,10 @@ const ManadoPricingModal: React.FC<PricingModalProps> = ({ onClose }) => {
       >
         <button
           onClick={onClose}
-          className="absolute -top-3 -right-3 bg-white rounded-full p-2 shadow-lg hover:bg-gray-200 transition-transform duration-200 transform hover:scale-110"
+          className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-200 transition-transform duration-200 transform hover:scale-110"
           aria-label="Close"
         >
-          <CloseIcon className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
+          <CloseIcon className="w-6 h-6 text-gray-700" />
         </button>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Tabel Harga Trip Manado</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
