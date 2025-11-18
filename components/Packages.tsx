@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TravelPackage } from '../types';
 import PackageCard from './PackageCard';
+import PricingModal from './PricingModal';
 
 const travelPackages: TravelPackage[] = [
   {
@@ -31,6 +32,8 @@ const travelPackages: TravelPackage[] = [
 
 
 const Packages: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section id="packages" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -40,10 +43,11 @@ const Packages: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {travelPackages.map((pkg) => (
-            <PackageCard key={pkg.id} packageInfo={pkg} />
+            <PackageCard key={pkg.id} packageInfo={pkg} onOpenModal={() => setIsModalOpen(true)} />
           ))}
         </div>
       </div>
+      {isModalOpen && <PricingModal onClose={() => setIsModalOpen(false)} />}
     </section>
   );
 };
